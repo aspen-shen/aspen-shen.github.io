@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "sunrise" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Yang Shen"
 title_separator          : "-"
 name                     : &name "Yang Shen"
@@ -255,24 +255,17 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
+  # _musings
   - scope:
       path: ""
-      type: teaching
+      type: posts
     values:
       layout: single
       author_profile: true
-      share: true
+      read_time: true
       comments: true
-  # _publications
-  - scope:
-      path: ""
-      type: publications
-    values:
-      layout: single
-      author_profile: true
       share: true
-      comments: true
+      related: true
   # _portfolio
   - scope:
       path: ""
@@ -282,14 +275,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS
